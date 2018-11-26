@@ -75,7 +75,7 @@ export default class MasterMissions extends React.Component {
      renderHeader = () =>{
        return(
         <SearchBar 
-          placeholder = "Type Here..."
+          placeholder = "Search Here..."
           lightTheme        
           round        
           onChangeText={text => this.searchFilterFunction(text)}
@@ -85,7 +85,6 @@ export default class MasterMissions extends React.Component {
      }
 
      loadData = () =>{
-       console.log(this.state.dataReal);
         return (<List><FlatList 
                   data={this.state.dataReal} 
                   renderItem={({item}) =>(
