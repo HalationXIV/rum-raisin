@@ -1,6 +1,6 @@
 export default {
      STORE_KEY: 'a56z0fzrNpl^2',
-     BASE_URL: 'http://someurl.com',
+     BASE_URL: 'https://fate-go.cirnopedia.org/',
      COLOR: {
        ORANGE: '#C50',
        DARKBLUE: '#0F3274',
@@ -9,7 +9,9 @@ export default {
      }
 };
 
-export const cheerio = require('react-native-cheerio'); 
+export const cheerio = require('react-native-cheerio');
+
+export const BaseUrl = 'https://fate-go.cirnopedia.org/';
 
 export function separateJapanese(str){
      var arr = [{jap: "", eng: ""}];

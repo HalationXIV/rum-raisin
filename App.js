@@ -7,13 +7,14 @@
  */
 
 import React, {Component} from 'react';
-import {createStackNavigator,} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation';
 import HomeScreen from './components/HomeScreen';
 import MasterMissionsScreen from './components/MasterMissionsScreen';
 import EventScreen from './components/EventScreen';
 import ServantScreen from './components/ServantsScreen';
 import TierListScreen from './components/TierListScreen';
 import CraftEssenceScreen from './components/CraftEssencesScreen';
+import ServantDetailScreen from './components/ServantDetail';
 
 const RootStack = createStackNavigator(
   {
@@ -22,7 +23,8 @@ const RootStack = createStackNavigator(
     Event: EventScreen,
     Servant: ServantScreen,
     TierList: TierListScreen,
-    CraftEssence: CraftEssenceScreen
+    CraftEssence: CraftEssenceScreen,
+    ServantDetail: ServantDetailScreen
   },
   {
     initialRouteName: 'Home',

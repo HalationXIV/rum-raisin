@@ -93,7 +93,6 @@ export default class MasterMissions extends React.Component {
                     </ListItem>)}
                   keyExtractor = {item => item.key.toString()}  
                   ItemSeparatorComponent = {this.renderSeparator}
-                  ListHeaderComponent = {this.renderHeader}
                   />
                 </List>
                 );
@@ -107,14 +106,9 @@ export default class MasterMissions extends React.Component {
      render() {
        return (
          <View style={styles.container}>
+          <Text style={styles.headerText}>Reward: 3x Saint Quartz Fragment (s)</Text>
            {this.loadData()}
          </View>
-      //   <Container style={styles.container}>
-      //   <Content>
-           
-          
-      //   </Content>
-      // </Container>
        );
      }
 }
@@ -123,8 +117,8 @@ const styles = StyleSheet.create({
      container: {
           flex: 1,
           flexDirection:'column',
-          justifyContent: 'center',
-          alignItems: 'center',
+          //justifyContent: 'center',
+          //alignItems: 'center',
           backgroundColor: '#C7EAE4',
           paddingTop: 15
      },
@@ -133,8 +127,13 @@ const styles = StyleSheet.create({
       color: '#5B616A',
      },
      headerText:{
-      //  fontSize: 18,
-      //  color: '#020402',
+       fontSize: 20,
+       padding: 5,
+       color: '#FFFAE3',
+       borderRadius: 5,
+       marginLeft:5,
+       marginRight: 5,
+       backgroundColor: '#8FBFE0',
        //alignItems:''
      }
 });
