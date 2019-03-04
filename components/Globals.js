@@ -9,6 +9,7 @@ export default {
      }
 };
 
+//cheerio constructor
 export const cheerio = require('react-native-cheerio');
 
 export const BaseUrl = 'https://fate-go.cirnopedia.org/';
