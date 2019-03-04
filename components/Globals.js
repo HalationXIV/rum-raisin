@@ -11,6 +11,7 @@ export default {
 
 export const cheerio = require('react-native-cheerio');
 
+//base url for fetching
 export const BaseUrl = 'https://fate-go.cirnopedia.org/';
 
 export function separateJapanese(str){
